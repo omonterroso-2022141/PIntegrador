@@ -1,6 +1,11 @@
+# Archivos específicos que queremos incluir para mvnw y maven-wrapper.jar
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignorar el archivo de ayuda y la carpeta de compilación de Maven y proyectos específicos
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
