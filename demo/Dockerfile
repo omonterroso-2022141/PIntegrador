@@ -1,4 +1,6 @@
 # Usa una imagen base con Java
+RUN chmod +x ./mvnw
+
 FROM openjdk:17-jdk-slim AS build
 
 # Define el directorio de trabajo
@@ -7,7 +9,7 @@ WORKDIR /app
 # Copia los archivos de Maven Wrapper y asigna permisos
 COPY mvnw .
 COPY .mvn/ .mvn
-RUN chmod +x mvnw
+
 
 # Copia el archivo pom.xml para descargar dependencias
 COPY pom.xml .
