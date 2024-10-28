@@ -17,6 +17,8 @@ public class Reservation {
         this.reservationDate = reservationDate;
         this.userId = userId;
     }
+    public Reservation() {
+    }
 
     public String getId() {
         return id;

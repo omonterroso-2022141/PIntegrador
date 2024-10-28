@@ -45,7 +45,7 @@ public class ReservationsServiceMap implements ReservationsService {
     @Override
     public Reservation updateReservation(String id, Reservation reservation) {
         if (reservationRepository.existsById(id)) {
-            reservation.setId(id);  // Aseguramos que el ID es correcto
+            reservation.setId(id);
             return reservationRepository.save(reservation);
         }
         return null;

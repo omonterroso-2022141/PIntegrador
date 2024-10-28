@@ -6,11 +6,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "user")
 public class User {
     @Id
-    private String id; // ID como String para MongoDB
+    private String id;
     private String name;
     private String email;
 
-    // Getters y setters
     public String getId() {
         return id;
     }

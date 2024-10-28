@@ -8,10 +8,8 @@ import java.util.Optional;
 
 public interface ReservationRepository extends MongoRepository<Reservation, String> {
 
-    Optional<Reservation> findById(String id); // Método para encontrar una reserva por ID
+    Optional<Reservation> findById(String id);
 
     List<Reservation> findByUserId(String userId);
 
-    // Puedes agregar otros métodos de consulta si es necesario, por ejemplo:
-    // List<Reservation> findByUserId(String userId);
 }

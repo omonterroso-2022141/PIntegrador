@@ -15,27 +15,27 @@ public class UsersServiceMap implements UsersService {
 
     @Override
     public User createUser(User user) {
-        return userRepository.save(user); // Guarda el usuario en MongoDB
+        return userRepository.save(user);
     }
 
     @Override
     public List<User> getAllUsers() {
-        return userRepository.findAll(); // Obtiene todos los usuarios de MongoDB
+        return userRepository.findAll();
     }
 
     @Override
     public User getUserById(String id) {
-        return userRepository.findById(id).orElse(null); // Obtiene usuario por ID
+        return userRepository.findById(id).orElse(null);
     }
 
     @Override
     public User updateUser(String id, User user) {
-        user.setId(id); // Asegúrate de que el id esté establecido
-        return userRepository.save(user); // Actualiza el usuario en MongoDB
+        user.setId(id);
+        return userRepository.save(user);
     }
 
     @Override
     public void deleteUser(String id) {
-        userRepository.deleteById(id); // Elimina el usuario por ID
+        userRepository.deleteById(id);
     }
 }
